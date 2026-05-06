@@ -218,17 +218,14 @@ h1, h2, h3, h4 {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: linear-gradient(180deg, #d8d8d8 0%, #f4f4f4 50%, #c8c8c8 100%);
-  backdrop-filter: blur(18px) saturate(140%);
-  -webkit-backdrop-filter: blur(18px) saturate(140%);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.18);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(180deg, var(--green) 0%, #c5ff32 50%, var(--green-2) 100%);
+  border-bottom: 2px solid #050505;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35), 0 0 24px rgba(181, 255, 0, 0.25);
   transition: background .3s ease, border-color .3s ease;
 }
 
 .nav.scrolled {
-  background: linear-gradient(180deg, #cfcfcf 0%, #ececec 50%, #b8b8b8 100%);
-  border-color: rgba(0, 0, 0, 0.25);
+  background: linear-gradient(180deg, #a8ee00 0%, var(--green) 50%, var(--green-2) 100%);
 }
 
 .nav-inner {
@@ -265,7 +262,7 @@ h1, h2, h3, h4 {
 .nav-links a {
   font-size: 14px;
   font-weight: 700;
-  color: #1a1a1a;
+  color: #050505;
   position: relative;
   padding: 6px 0;
   transition: color .25s ease;
@@ -278,14 +275,25 @@ h1, h2, h3, h4 {
   bottom: 0;
   width: 0;
   height: 2px;
-  background: var(--green);
+  background: #050505;
   transition: width .3s ease;
 }
 
-.nav-links a:hover { color: var(--green-2); }
+.nav-links a:hover { color: #050505; }
 .nav-links a:hover::after { width: 100%; }
 
-.nav-cta { padding: 11px 20px; font-size: 14px; }
+.nav-cta {
+  padding: 11px 20px;
+  font-size: 14px;
+  background: #050505;
+  color: var(--green);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4), inset 0 0 0 1px rgba(181, 255, 0, 0.4);
+}
+.nav-cta:hover {
+  background: #050505;
+  color: var(--white);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.5), inset 0 0 0 1px var(--green);
+}
 
 .nav-toggle {
   display: none;
