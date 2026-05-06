@@ -184,7 +184,7 @@ h1, h2, h3, h4 {
 /* ====== ANNOUNCEMENT BAR ====== */
 
 .announcement {
-  background: var(--green);
+  background: linear-gradient(90deg, #b8b8b8 0%, #ececec 25%, #ffffff 50%, #ececec 75%, #b8b8b8 100%);
   color: var(--black);
   overflow: hidden;
   padding: 9px 0;
@@ -194,6 +194,7 @@ h1, h2, h3, h4 {
   font-size: 12px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 .announcement-track {
@@ -238,7 +239,7 @@ h1, h2, h3, h4 {
 }
 
 .nav-logo img {
-  height: 56px;
+  height: 112px;
   width: auto;
   filter: drop-shadow(0 4px 14px rgba(181, 255, 0, 0.2));
   transition: transform .3s ease;
@@ -1306,7 +1307,7 @@ h1, h2, h3, h4 {
   .whatsapp-float { width: 58px; height: 58px; bottom: 18px; right: 18px; }
   .wa-tooltip { display: none; }
 
-  .nav-logo img { height: 48px; }
+  .nav-logo img { height: 96px; }
   .announcement { font-size: 11px; }
 
   .about-stat { right: 0; bottom: -16px; padding: 14px 18px; }
