@@ -235,13 +235,21 @@ h1, h2, h3, h4 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 14px 24px;
+  padding: 6px 24px;
   gap: 24px;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 2;
 }
 
 .nav-logo img {
   height: 140px;
   width: auto;
+  margin: -38px 0;
   filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.35));
   transition: transform .3s ease;
 }
@@ -1309,7 +1317,7 @@ h1, h2, h3, h4 {
   .whatsapp-float { width: 58px; height: 58px; bottom: 18px; right: 18px; }
   .wa-tooltip { display: none; }
 
-  .nav-logo img { height: 110px; }
+  .nav-logo img { height: 110px; margin: -30px 0; }
   .announcement { font-size: 11px; }
 
   .about-stat { right: 0; bottom: -16px; padding: 14px 18px; }
